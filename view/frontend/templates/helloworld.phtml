@@ -1,0 +1,25 @@
+<h1>Nguyen Xuan Vinh</h1>
+
+<h2>Plugin :</h2>
+
+<ul>
+    <?php foreach ($block->getName('AHT', 'Magento') as $i) { ?>
+    <li>
+        <?php
+            echo $i;
+        ?>
+    </li>
+    <?php }?>
+</ul>
+
+<h3>Danh sach san pham</h3>
+
+<ul>
+    <?php foreach ($block->getProduct() as $item) {?>
+    <li>
+        <a href="">
+            <?php echo $item['name']; ?>
+        </a>
+    </li>
+    <?php }?>
+</ul>
